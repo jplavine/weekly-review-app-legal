@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Weekly Review App</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="top"><a href="index.html">← Weekly Review App</a></nav>
+<div class="wrap">
+  <div class="card">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: August 12, 2026</p>
+
+    <p>Weekly Review App ("the app") is a personal productivity tool for running a weekly GTD
+    (Getting Things Done) review. This policy explains what information the app collects, why,
+    and the choices you have. It is published by JPL Advisory ("we", "us").</p>
+
+    <h2>The app works fully offline, with no account required</h2>
+    <p>You can use every core feature of the app — the guided weekly checklist, reflection notes,
+    the Quick Tally, and your history — without ever creating an account. In that mode, your data
+    is stored only on your own device and is never sent to us.</p>
+
+    <h2>Information you provide if you create an account</h2>
+    <p>Creating an account is optional, and only needed if you want your review history backed up
+    and synced across your own devices, or want AI-generated insights. If you create an account,
+    we collect:</p>
+    <ul>
+      <li><strong>Email address and password</strong>, to create and secure your account. Passwords
+      are never stored in plain text — authentication is handled by our infrastructure provider,
+      Supabase, using industry-standard hashing.</li>
+      <li><strong>Your review data</strong>: which checklist items you've completed, your written
+      reflection notes, the labels you give your own inboxes/lists/calendars, your Quick Tally
+      counts, review dates, and time spent reviewing.</li>
+      <li><strong>Your app preferences</strong>: your chosen weekly review window and reminder
+      day/time.</li>
+      <li><strong>Push notification delivery details</strong>, only if you turn on the weekly
+      reminder in a web browser: a push subscription endpoint and encryption keys used solely to
+      deliver that reminder notification to your browser. (On iOS/Android, the reminder is
+      scheduled entirely on your device using local notifications, and no equivalent data is sent
+      to us.)</li>
+    </ul>
+
+    <h2>AI-generated insights (optional)</h2>
+    <p>If you use the Insights feature, a summary of your review activity — completion counts,
+    your written reflection notes, and Quick Tally counts — is sent to Google's Gemini API to
+    generate a short written summary, which is then stored in our database tied to your account.
+    This only happens if you're signed in and you or a scheduled process trigger the feature; it
+    never happens for an account that hasn't opted into cloud sync.</p>
+
+    <h2>What we don't collect</h2>
+    <p>We don't collect your location, contacts, photos, or advertising identifiers. We don't run
+    third-party analytics or advertising trackers, and we don't use your data for tracking across
+    other companies' apps or websites.</p>
+
+    <h2>How your information is used</h2>
+    <p>Solely to operate the features described above: syncing your review data across your
+    devices, sending your weekly reminder, and generating AI insights. We do not sell your
+    information, and we do not use it for advertising.</p>
+
+    <h2>Who we share information with</h2>
+    <p>We use a small number of service providers to operate the app, each of which processes
+    data only on our behalf and only as needed to provide their service:</p>
+    <ul>
+      <li><strong>Supabase</strong> — hosts our database and handles authentication.</li>
+      <li><strong>Google (Gemini API)</strong> — processes review data to generate AI insight
+      summaries, only when that feature is used.</li>
+      <li><strong>Push notification services</strong> (e.g. Apple, Google/Mozilla push
+      infrastructure) — deliver the weekly reminder notification you've opted into, using only
+      the subscription details needed to route that notification to your device or browser.</li>
+    </ul>
+    <p>We do not otherwise share, rent, or sell your information to third parties.</p>
+
+    <h2>Data retention and deletion</h2>
+    <p>Your synced data is kept for as long as your account exists. You can:</p>
+    <ul>
+      <li>Delete an individual week's review data at any time from within the app.</li>
+      <li>Permanently delete your account and all associated data from our servers at any time,
+      from within the app: <strong>Settings → Account → Delete Account</strong>. This
+      immediately and irreversibly deletes your account record, review history, preferences, and
+      any AI-generated insights from our systems. Data already stored locally on a device you've
+      used the app on is not automatically erased by this — you can clear that separately by
+      uninstalling the app or clearing its local storage.</li>
+      <li>Alternatively, email <a href="mailto:info@jpladv.com">info@jpladv.com</a> to request
+      deletion.</li>
+    </ul>
+
+    <h2>Security</h2>
+    <p>Data in transit between the app and our servers is encrypted (HTTPS/TLS). Our database
+    uses row-level security so that your data is only ever readable by your own account. No
+    method of transmission or storage is 100% secure, but we take reasonable, industry-standard
+    measures to protect your information.</p>
+
+    <h2>Children's privacy</h2>
+    <p>The app is not directed to children, and we do not knowingly collect information from
+    anyone under 13 years old. If you believe a child has provided us with personal information,
+    contact us and we will delete it.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we'll update the "Last updated" date above. Continued use of the
+    app after a change constitutes acceptance of the updated policy.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy or your data? Email
+    <a href="mailto:info@jpladv.com">info@jpladv.com</a>.</p>
+  </div>
+</div>
+</body>
+</html>
