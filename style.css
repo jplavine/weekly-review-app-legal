@@ -184,11 +184,14 @@ footer {
 
 .screenshots {
   display: flex;
-  justify-content: flex-start;
+  /* "safe" keeps this centered when everything fits, but falls back to left-aligned/scrollable
+     instead of clipping the start of the row when it overflows (e.g. 5 screenshots on mobile) —
+     plain "center" on an overflowing flex row makes the overflowed start inaccessible to scroll. */
+  justify-content: safe center;
   gap: 16px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  margin: 64px 0 48px 40px;
+  margin: 64px 0 48px;
 }
 
 .screenshots img {
