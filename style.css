@@ -4,6 +4,11 @@
   --text: #1c1c1e;
   --text-secondary: #6b6b70;
   --accent: #f2542d;
+  --accent-wash: #f2542d1a;
+  --clear: #2fb8c6;
+  --clear-wash: #2fb8c61a;
+  --current: #6c5ce0;
+  --current-wash: #6c5ce01a;
   --border: #e2e2e6;
 }
 
@@ -14,6 +19,11 @@
     --text: #f2f2f7;
     --text-secondary: #a0a0a5;
     --accent: #ff6a47;
+    --accent-wash: #ff6a471f;
+    --clear: #3dd9e3;
+    --clear-wash: #3dd9e31f;
+    --current: #8779ff;
+    --current-wash: #8779ff1f;
     --border: #2c2c2e;
   }
 }
@@ -113,4 +123,201 @@ footer {
   margin-top: 40px;
   color: var(--text-secondary);
   font-size: 13px;
+}
+
+/* Marketing homepage — everything below is scoped to index.html only. */
+
+.marketing-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.hero img.app-icon {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.hero .tagline {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero .pitch {
+  max-width: 520px;
+  margin: 0 auto 28px;
+  font-size: 17px;
+  color: var(--text-secondary);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--accent-wash);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 48px 0;
+}
+
+.screenshots img {
+  width: 220px;
+  max-width: 42vw;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  margin: 64px 0 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
+.phases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.phase-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.phase-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.phase-card h3 {
+  font-size: 17px;
+  margin: 0 0 6px;
+}
+
+.phase-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.phase-clear .phase-dot { background: var(--clear); }
+.phase-clear h3 { color: var(--clear); }
+.phase-current .phase-dot { background: var(--current); }
+.phase-current h3 { color: var(--current); }
+.phase-creative .phase-dot { background: var(--accent); }
+.phase-creative h3 { color: var(--accent); }
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.feature-card h3 {
+  font-size: 15px;
+  margin: 0 0 6px;
+}
+
+.feature-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 0;
+}
+
+.pricing-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+}
+
+.pricing-card .price {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.pricing-card .price-note {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.disclaimer {
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+  max-width: 600px;
+  margin: 56px auto 0;
+}
+
+.marketing-footer {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.marketing-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 640px) {
+  .phases,
+  .features {
+    grid-template-columns: 1fr;
+  }
 }
