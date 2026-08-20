@@ -182,6 +182,16 @@ footer {
   font-size: 15px;
 }
 
+.badge-link {
+  transition: background 0.15s ease;
+}
+
+.badge-link:hover {
+  background: var(--accent);
+  color: var(--card);
+  text-decoration: none;
+}
+
 .screenshots {
   display: flex;
   /* "safe" keeps this centered when everything fits, but falls back to left-aligned/scrollable
