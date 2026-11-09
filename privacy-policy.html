@@ -11,7 +11,7 @@
 <div class="wrap">
   <div class="card">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: August 14, 2026</p>
+    <p class="meta">Last updated: November 9, 2026</p>
 
     <p>Clear & Current ("the app") is a personal productivity tool for running a weekly review of
     your systems, projects, and obligations. The tool is intended to encourage busy professionals
@@ -38,6 +38,10 @@
       you give your own inboxes/lists/calendars, your Quick Tally counts, review dates, and time
       spent reviewing. The app does not have a reflection-notes or journaling feature — there's no
       free-form personal writing for us to collect in the first place.</li>
+      <li><strong>Your token balance and purchase records</strong>: if you buy tokens, we store a
+      record of the Apple transaction (its transaction ID and the number of tokens credited) and
+      a ledger of the tokens you've received and spent. We do not receive or store your payment
+      card or Apple Account payment details &mdash; purchases are processed entirely by Apple.</li>
       <li><strong>Your app preferences</strong>: your chosen weekly review window and reminder
       day/time.</li>
       <li><strong>Push notification delivery details</strong>, only if you turn on the weekly
@@ -51,8 +55,8 @@
     <p>If you use the Insights feature, a summary of your review activity — completion counts and
     Quick Tally counts — is sent to Google's Gemini API to generate a short written summary, which
     is then stored in our database tied to your account. This only happens if you're signed in and
-    you or a scheduled process trigger the feature; it never happens for an account that hasn't
-    opted into cloud sync.</p>
+    you choose to generate an insight, which uses tokens from your balance; it never happens for an
+    account that hasn't opted into cloud sync.</p>
 
     <h2>What we don't collect</h2>
     <p>We don't collect your location, contacts, photos, or advertising identifiers. We don't run
@@ -61,7 +65,8 @@
 
     <h2>How your information is used</h2>
     <p>Solely to operate the features described above: syncing your review data across your
-    devices, sending your weekly reminder, and generating AI insights. We do not sell your
+    devices, sending your weekly reminder, generating AI insights, and crediting and tracking your
+    tokens. We do not sell your
     information, and we do not use it for advertising.</p>
 
     <h2>Who we share information with</h2>
@@ -69,6 +74,8 @@
     data only on our behalf and only as needed to provide their service:</p>
     <ul>
       <li><strong>Supabase</strong> — hosts our database and handles authentication.</li>
+      <li><strong>Apple</strong> &mdash; processes in-app purchases of tokens and sends us a signed
+      transaction record so we can credit your account.</li>
       <li><strong>Google (Gemini API)</strong> — processes review data to generate AI insight
       summaries, only when that feature is used.</li>
       <li><strong>Push notification services</strong> (e.g. Apple, Google/Mozilla push
